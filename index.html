@@ -3,115 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل الحج الشخصي</title>
+    <title>دليل الحج ١٤٤٧هـ</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-        body { font-family: 'Tajawal', sans-serif; background-color: #f8fafc; color: #1e293b; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+        body { font-family: 'Tajawal', sans-serif; background: #fdfdfd; }
+        .gradient-header { background: linear-gradient(135deg, #065f46 0%, #064e3b 100%); }
+        .dua-box { border-right: 4px solid #f59e0b; background-color: #fffbeb; padding: 15px; border-radius: 12px; font-style: italic; }
+        .step-card { background: white; border-radius: 16px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
     </style>
 </head>
-<body class="pb-24">
+<body class="pb-10 text-slate-800">
 
-    <!-- Header -->
-    <header class="bg-slate-800 text-white p-6 rounded-b-[2rem] shadow-xl text-center border-b-4 border-amber-500">
-        <h1 class="text-2xl font-bold tracking-wide">دليل الحج ١٤٤٧هـ</h1>
-        <p class="text-slate-400 text-sm mt-1 italic">"لبيك اللهم لبيك، لبيك لا شريك لك لبيك"</p>
+    <!-- Header Section -->
+    <header class="gradient-header text-white p-8 rounded-b-[2.5rem] shadow-2xl text-center">
+        <div class="mb-4 text-emerald-200"><i class="fas fa-kaaba text-4xl"></i></div>
+        <h1 class="text-2xl font-extrabold tracking-tight">دليل رحلة الحج</h1>
+        <p class="text-emerald-100/80 text-sm mt-2">اللهم تقبل منا صالح الأعمال</p>
+        
+        <!-- Contact Info -->
+        <div class="mt-6 grid grid-cols-2 gap-2 text-xs">
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl">
+                <p class="opacity-70">فندق الإقامة</p>
+                <p class="font-bold">الصفوة - مكة</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-md p-3 rounded-2xl">
+                <p class="opacity-70 font-bold">حملة الأقصى</p>
+                <p class="font-bold">صلاح: 30234433</p>
+            </div>
+        </div>
     </header>
 
-    <div class="p-4 space-y-6">
-        
-        <!-- Contact Cards -->
-        <div class="grid grid-cols-2 gap-3">
-            <div class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-amber-500">
-                <p class="text-[10px] uppercase text-gray-400 font-bold">السكن</p>
-                <p class="font-bold text-slate-700">فندق الصفوة</p>
-            </div>
-            <a href="tel:30234433" class="bg-white p-4 rounded-2xl shadow-sm border-l-4 border-blue-500">
-                <p class="text-[10px] uppercase text-gray-400 font-bold">حملة الأقصى</p>
-                <p class="font-bold text-slate-700">أ. صلاح</p>
-            </a>
-        </div>
+    <main class="p-5 space-y-8">
 
-        <!-- Progress Checklist -->
-        <section class="bg-white rounded-3xl p-5 shadow-sm border border-slate-100">
-            <h2 class="font-bold mb-4 flex items-center">
-                <i class="fas fa-tasks ml-2 text-amber-500"></i> مسار العمرة (التمتع)
-            </h2>
-            <div class="space-y-4">
-                <label class="flex items-start space-x-3 space-x-reverse group">
-                    <input type="checkbox" class="mt-1 w-5 h-5 rounded border-gray-300 text-amber-600 focus:ring-amber-500">
-                    <div class="flex-1">
-                        <p class="text-sm font-medium">الإحرام من الميقات</p>
-                        <p class="text-xs text-gray-400">قول: "لبيك اللهم عمرة متمتعاً بها إلى الحج"</p>
-                    </div>
-                </label>
-                <label class="flex items-start space-x-3 space-x-reverse">
-                    <input type="checkbox" class="mt-1 w-5 h-5 rounded border-gray-300 text-amber-600">
-                    <div class="flex-1">
-                        <p class="text-sm font-medium">الطواف (٧ أشواط)</p>
-                        <p class="text-xs text-gray-400 italic">"بسم الله، والله أكبر" عند الحجر الأسود</p>
-                    </div>
-                </label>
-                <label class="flex items-start space-x-3 space-x-reverse">
-                    <input type="checkbox" class="mt-1 w-5 h-5 rounded border-gray-300 text-amber-600">
-                    <div class="flex-1">
-                        <p class="text-sm font-medium">السعي (٧ أشواط)</p>
-                        <p class="text-xs text-gray-400 font-arabic font-bold">"نبدأ بما بدأ الله به"</p>
-                    </div>
-                </label>
+        <!-- 1. الاستعداد للعمرة -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-2 border-r-4 border-emerald-600 pr-3">
+                <h2 class="text-xl font-bold text-emerald-900">أولاً: رحلة العمرة (التمتع)</h2>
+            </div>
+
+            <div class="step-card p-5 space-y-4">
+                <h3 class="font-bold border-b pb-2 text-emerald-700">١. الإحرام</h3>
+                <ul class="space-y-2 text-sm leading-relaxed">
+                    <li><i class="fas fa-check-circle text-emerald-500 ml-2"></i>إخلاص النية لله تعالى.</li>
+                    <li><i class="fas fa-check-circle text-emerald-500 ml-2"></i>الاغتسال للإحرام.</li>
+                    <li class="bg-amber-50 p-2 rounded text-amber-800 font-medium">⚠️ ملاحظة: "الطيب على الجسد لا على الإحرام".</li>
+                    <li><i class="fas fa-check-circle text-emerald-500 ml-2"></i>صلاة ركعتين وتكرار التلبية.</li>
+                </ul>
+                <div class="dua-box">
+                    <p class="text-xs text-amber-600 font-bold mb-1 underline">دعاء السفر:</p>
+                    "اللهم إنا نسألك في سفرنا هذا البر والتقوى"
+                </div>
+            </div>
+
+            <div class="step-card p-5 space-y-3">
+                <h3 class="font-bold border-b pb-2 text-emerald-700">٢. الميقات والوصول</h3>
+                <p class="text-sm font-bold bg-blue-50 p-3 rounded-xl text-blue-900 leading-relaxed">
+                    <i class="fas fa-plane-arrival ml-2"></i>في الطائرة عند الميقات: <br>
+                    "لبيك اللهم عمرة متمتعاً بها إلى الحج"
+                </p>
+                <p class="text-sm">بداية التلبية: <span class="font-bold">"لبيك اللهم لبيك.."</span></p>
+                <p class="text-xs text-slate-500">الطريق من جدة لمكة: التلبية، التهليل، التسبيح.</p>
+                <p class="text-xs text-emerald-600 font-bold italic"><i class="fas fa-info-circle ml-1"></i>يستحب الاغتسال مرة ثانية عند الوصول لمكة.</p>
             </div>
         </section>
 
-        <!-- Hajj Days Timeline -->
-        <section class="space-y-3">
-            <h2 class="font-bold px-2 flex items-center">
-                <i class="fas fa-route ml-2 text-blue-500"></i> الجدول الزمني للحج
-            </h2>
-            
-            <!-- Day 8 -->
-            <div class="bg-white p-4 rounded-2xl border-r-4 border-emerald-500 shadow-sm">
-                <div class="flex justify-between items-center">
-                    <span class="font-bold text-emerald-700">٨ ذو الحجة (التروية)</span>
-                    <span class="text-[10px] bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full font-bold font-arabic">سنة</span>
-                </div>
-                <p class="text-xs mt-2 text-gray-600 italic">الإحرام من فندق الصفوة والتوجه لمنى (قصر الصلاة بلا جمع).</p>
+        <!-- 2. المناسك داخل الحرم -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-2 border-r-4 border-amber-500 pr-3">
+                <h2 class="text-xl font-bold text-amber-900">ثانياً: الطواف والسعي</h2>
             </div>
 
-            <!-- Day 9 -->
-            <div class="bg-white p-4 rounded-2xl border-r-4 border-amber-500 shadow-sm">
-                <div class="flex justify-between items-center">
-                    <span class="font-bold text-amber-700">٩ ذو الحجة (عرفة)</span>
-                    <span class="text-[10px] bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-bold">ركن أعظم</span>
+            <div class="step-card p-5 space-y-4">
+                <div class="dua-box bg-slate-50 border-slate-400 font-normal">
+                    <p class="text-xs font-bold mb-1">عند دخول المسجد:</p>
+                    "بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ"
                 </div>
-                <p class="text-xs mt-2 text-gray-600 italic">عرفة (جمع تقديم) -> مزدلفة (بعد المغرب).</p>
+
+                <div class="space-y-2">
+                    <p class="font-bold text-sm underline italic">الطواف:</p>
+                    <p class="text-sm">بداية كل شوط: <span class="text-emerald-700 font-bold">"بِسْمِ اللهِ، وَاللهُ أَكْبَرُ"</span></p>
+                    <p class="text-xs text-slate-600">خلال الطواف: أكثرِ من الدعاء والتهليل والتكبير.</p>
+                </div>
+
+                <div class="bg-emerald-50 p-3 rounded-xl">
+                    <p class="font-bold text-xs text-emerald-800">بعد الطواف:</p>
+                    <p class="text-xs leading-relaxed mt-1">• صلاة ركعتين خلف مقام إبراهيم (١: الكافرون، ٢: الإخلاص).</p>
+                    <p class="text-xs leading-relaxed">• شرب ماء زمزم.</p>
+                </div>
+            </div>
+
+            <div class="step-card p-5 space-y-4">
+                <h3 class="font-bold border-b pb-2 text-purple-700 underline">الصفا والمروة (٧ أشواط)</h3>
+                <p class="text-xs font-bold">عند البدء: "نبدأ بما بدأ الله به"</p>
+                <p class="text-[11px] italic bg-slate-50 p-2 rounded leading-normal">"إِنَّ الصَّفَا وَالْمَرْوَةَ مِن شَعَائِرِ اللَّهِ ۖ فَمَنْ حَجَّ الْبيتَ أَوِ اعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا..."</p>
+                
+                <div class="dua-box">
+                    <p class="text-xs font-bold mb-1 underline">عند استقبال الكعبة (٣ مرات):</p>
+                    "لا إله إلا الله وحده لا شريك له، له الملك، وله الحمد، وهو على كل شيء قدير، لا إله إلا الله وحده، أنجز وعده، ونصر عبده، وهزم الأحزاب وحده"
+                </div>
+                <p class="text-xs text-slate-500 font-bold">ثم الدعاء مرتين.</p>
+                <div class="bg-purple-50 p-3 rounded-xl border border-purple-100">
+                    <p class="text-sm font-bold text-purple-900"><i class="fas fa-cut ml-2"></i>نهاية العمرة:</p>
+                    <p class="text-xs mt-1">تقصير من الشعر -> تحلل كامل بانتظار الحج.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Prohibitions Alert -->
-        <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
-            <h3 class="text-red-700 font-bold text-sm mb-2"><i class="fas fa-ban ml-1"></i> محظورات الإحرام (للنساء)</h3>
-            <ul class="text-xs text-red-600 grid grid-cols-2 gap-y-1">
-                <li>• منع التطيب</li>
-                <li>• قص الأظافر</li>
-                <li>• قص الشعر</li>
-                <li>• لبس القفازات</li>
-            </ul>
-        </div>
-    </div>
+        <!-- 3. رحلة الحج -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-2 border-r-4 border-blue-600 pr-3">
+                <h2 class="text-xl font-bold text-blue-900">ثالثاً: أعمال الحج</h2>
+            </div>
 
-    <!-- Sticky Footer Actions -->
-    <footer class="fixed bottom-0 left-0 right-0 bg-white border-t p-4 flex justify-around">
-        <button onclick="window.scrollTo(0,0)" class="flex flex-col items-center text-slate-400">
-            <i class="fas fa-arrow-up"></i>
-            <span class="text-[10px] mt-1">البداية</span>
+            <div class="grid grid-cols-1 gap-4 text-xs font-bold">
+                <div class="bg-white p-4 rounded-2xl border-l-4 border-blue-600 shadow-sm">
+                    <p class="text-blue-600 mb-1 italic">٨ ذو الحجة (التروية)</p>
+                    الإحرام من الفندق -> "لبيك اللهم حجاً" -> التوجه لمنى (قصر الصلاة).
+                </div>
+                <div class="bg-amber-50 p-4 rounded-2xl border-l-4 border-amber-600 shadow-sm">
+                    <p class="text-amber-700 mb-1 italic underline text-sm">٩ ذو الحجة (عرفة)</p>
+                    عرفة (الركن الأعظم) -> جمع ظهر وعصر -> الدعاء من الزوال للغروب -> مزدلفة.
+                </div>
+                <div class="bg-red-50 p-4 rounded-2xl border-l-4 border-red-600 shadow-sm">
+                    <p class="text-red-700 mb-1 italic">١٠ ذو الحجة (النحر)</p>
+                    رمي جمرة العقبة -> التحلل الأول -> طواف الإفاضة والسعي -> التحلل الثاني.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Navigation Footer -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-lg border-t p-2 flex justify-around shadow-2xl">
+        <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="flex flex-col items-center p-2 text-emerald-700">
+            <i class="fas fa-home"></i>
+            <span class="text-[10px] font-bold mt-1">الرئيسية</span>
         </button>
-        <button class="bg-slate-800 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
-            دليل الأدعية
+        <button class="flex flex-col items-center p-2 text-slate-400">
+            <i class="fas fa-book-open"></i>
+            <span class="text-[10px] font-bold mt-1">الأدعية</span>
         </button>
-    </footer>
+        <button onclick="window.print()" class="flex flex-col items-center p-2 text-slate-400">
+            <i class="fas fa-file-pdf"></i>
+            <span class="text-[10px] font-bold mt-1">حفظ PDF</span>
+        </button>
+    </nav>
 
 </body>
 </html>
